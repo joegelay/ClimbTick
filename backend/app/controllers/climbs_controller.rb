@@ -12,4 +12,9 @@ class ClimbsController < ApplicationController
 
         redirect_to "http://localhost:3000/"
     end 
+
+    def show 
+        climb = Climb.find_by(id: params[:id])
+        render json: climb, include: :location
+    end 
 end

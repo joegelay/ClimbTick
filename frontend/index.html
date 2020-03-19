@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>ClimbTick</title>
 </head>
+
 <body>
     <header>
         <h1>ClimbTick</h1>
     </header>
-    
+
     <main>
         <h2 id="list-head">Climbs you have ticked...</h2>
         <ul id="climb-list">
-            
+
         </ul>
 
         <h3>Add a climb...</h3>
@@ -21,7 +24,6 @@
             <label for="name">Name</label>
             <input type="text" name="name" id="name" required>
 
-            <!-- if state and crag match an exisiting location, use that location, else create a location and then use that -->
             <label for="state">State</label>
             <input type="text" name="state" id="state" required placeholder="e.g. Kentucky">
 
@@ -42,24 +44,26 @@
                 <option value="Lead">Lead</option>
             </select>
 
-            <p>Star Rating:</p>
-            <label for="star_rating1">1</label>
-            <input type="radio" id="star_rating1" name="star_rating" value="1">
-            <label for="star_rating2">2</label>
-            <input type="radio" id="star_rating2" name="star_rating" value="2">
-            <label for="star_rating3">3</label>
-            <input type="radio" id="star_rating3" name="star_rating" value="3" checked>
-            <label for="star_rating4">4</label>
-            <input type="radio" id="star_rating4" name="star_rating" value="4">
-            
+            <p>Star Rating:
+                <label for="star_rating1">1</label>
+                <input type="radio" id="star_rating1" name="star_rating" value="1">
+                <label for="star_rating2">2</label>
+                <input type="radio" id="star_rating2" name="star_rating" value="2">
+                <label for="star_rating3">3</label>
+                <input type="radio" id="star_rating3" name="star_rating" value="3" checked>
+                <label for="star_rating4">4</label>
+                <input type="radio" id="star_rating4" name="star_rating" value="4">
+            </p>
+
             <label for="notes">Notes:</label>
             <input type="text" name="notes" id="notes" placeholder="Optional. Gear? Falls?">
 
-             <button type="submit">Submit</button>
-    
+            <button type="submit">Submit</button>
+
         </form>
 
     </main>
     <script src="script.js"></script>
 </body>
+
 </html>
